@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+    <style>
+        :root{
+            overflow: hidden;
+            background-color: rgb(108, 113, 134);
+        }
+        .score-wrapper{
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+        
+
+        }
+        canvas{
+            position: absolute;
+            top: 0;
+        }
+
+        .gameover{
+            font-size: 5vw;
+            font-weight: bolder;
+            outline: 2px solid;
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.281);
+            border-radius: 20px;
+            color: white;
+            display: none;
+        }
+        
+    </style>
+</head>
+<body>
+
+
+
+    <div class="score-wrapper">
+        Score:<div class="score">
+         &nbsp; 0
+        </div>
+    </div>
+
+    <canvas></canvas>
+
+    <div class="gameover">
+        Game Over
+    </div>
+    
+    <script src="./game.js"></script>
+</body>
+</html>
